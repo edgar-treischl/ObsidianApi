@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  obsidian-api:
+    build: .
+    container_name: obsidian-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./vault:/app/vault:ro   # mount local vault for testing new notes

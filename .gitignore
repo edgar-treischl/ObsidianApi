@@ -1,0 +1,30 @@
+# --- Python ---
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# --- SQLite / generated store ---
+/store/vault.db
+
+# --- Editor / OS ---
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+*.vscode/
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
+
+# --- Optional CI / build artifacts ---
+/build/
+
+
+.env
+/vault/.obsidian/
+/vault/.obsidian/workspace.json
+
