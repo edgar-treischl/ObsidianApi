@@ -146,6 +146,9 @@ curl "http://localhost:8000/v1/search?q=knowledge"
 
 curl http://localhost:8000/v1/notes/e2bccb38-c788-460e-bb64-d76cb2cb7e7f
 
+curl http://localhost:8000/v1/notes/e9429f09-d3ed-4db5-a8bf-73ab9e5b5418/links
+
+
 
 ````
 

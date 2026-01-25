@@ -11,7 +11,7 @@ owner: tre
 ---
 
 
-This repository is intended to serve as a **single source of truth for team knowledge**, combining Obsidian for note-taking and Docusaurus for documentation deployment. The goal is to create a workflow where engineers can write Markdown notes, and the team can query and browse the knowledge base efficiently. (mylink)[www.google.de]
+This repository is intended to serve as a **single source of truth for team knowledge**, combining Obsidian for note-taking and Docusaurus for documentation deployment. The goal is to create a workflow where engineers can write Markdown notes, and the team can query and browse the knowledge base efficiently. [[welcome]]
 
 
 

@@ -24,8 +24,6 @@
 ## Next Steps
 
 1. **Enhance validation**:  
-   - Warn or fix duplicate UUIDs automatically.  
-   - Ensure all new notes get a valid UUID.  
 2. **Refine schema**:  
    - Optional: headings, block IDs for granular linking.  
    - Optional: track creation/modification timestamps.  
