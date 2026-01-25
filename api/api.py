@@ -7,7 +7,10 @@ from rapidfuzz import process, fuzz
 
 DB_FILE = "./store/vault.db"
 
-app = FastAPI(title="ObsidianHeadless API", version="v1")
+app = FastAPI(
+    title="Obsidian API", 
+    version="0.0.0.1",
+    description="Read-only API over compiled knowledge base")
 
 # -----------------------------
 # Database helper
