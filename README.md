@@ -104,15 +104,40 @@ Use this summary as a prompt to continue brainstorming, refining schema, API end
 python3 -m venv .venv 
 source .venv/bin/activate        
 
+#Win
+python -m venv .venv 
+.\.venv\Scripts\Activate.ps1
+
+
 python validate_vault.py
 python scripts/build_sqlite.py
 
-
+#sqlite3 is a CLI Tool shipped with unix/maybe installed with homebrew
 sqlite3 store/vault.db "SELECT id, title FROM notes;"
 sqlite3 store/vault.db "SELECT * FROM tags;" 
-sqlite3 store/vault.db "SELECT * FROM links;"
+sqlite3 .store/vault.db "SELECT * FROM links;"
 
 ````
+
+
+```py
+# scripts/query_db.py
+import sqlite3
+import sys
+
+table = sys.argv[1] if len(sys.argv) > 1 else "links"
+
+conn = sqlite3.connect("store/vault.db")
+cur = conn.cursor()
+
+cur.execute(f"SELECT * FROM {table};")
+rows = cur.fetchall()
+
+for row in rows:
+    print(row)
+
+conn.close()
+```
 
 
 
