@@ -1,0 +1,20 @@
+name: ObsidianApi
+description: REST API Obsidian
+dev_path: backend
+status: experimental
+role: project
+tags:
+  - backend
+language: python
+setup:
+  - make
+env:
+  - .env.example
+services:
+  - postgres
+  - redis
+depends_on:
+  - my-core-lib
+workspace: []
+update_strategy: []
+priority: []
